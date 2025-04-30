@@ -14,7 +14,6 @@ body {
   margin: 0;
 }
 
-
 /* Contenedor de la tarjeta */
 .tarjeta {
   width: 300px;
@@ -77,25 +76,25 @@ body {
 
 /* Cara posterior */
 .posterior {
-    background-color: #2d3e50;
-    color: white;
-    transform: rotateY(180deg); /* Coloca la parte
+  background-color: #2d3e50;
+  color: white;
+  transform: rotateY(180deg); /* Coloca la parte
       posterior invertida */
-    padding: 20px;
-  }
-  .posterior h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  .posterior p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .posterior button:hover {
-    background-color: #0056b3;
-  }
-  /* Voltear la tarjeta cuando se hace clic en
+  padding: 20px;
+}
+.posterior h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.posterior p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.posterior button:hover {
+  background-color: #0056b3;
+}
+/* Voltear la tarjeta cuando se hace clic en
       Detalles 
   .tarjeta:hover .frontal {
     transform: rotateY(180deg); /* Voltea la
@@ -105,6 +104,16 @@ body {
     transform: rotateY(0deg); /* Muestra la
       cara posterior 
   }
-*/  
+*/
 
-  
+.tarjeta .frontal {
+  transform: rotateY(0deg);
+}
+
+.tarjeta.girada .frontal {
+  transform: rotateY(180deg);
+}
+
+.tarjeta.girada .posterior {
+  transform: rotateY(0deg);
+}
